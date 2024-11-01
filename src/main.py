@@ -13,7 +13,7 @@ intents.message_content = True
 client = commands.Bot(command_prefix='&', intents=intents)
 
 @client.command()
-async def test(ctx):
+async def test(ctx, author):
     print(f"passed")
 
 @client.event
