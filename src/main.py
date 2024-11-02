@@ -1,10 +1,9 @@
 import os
-from dotenv import load_dotenv
-import discord
+import discord 
 from discord.ext import commands
 import json
 
-load_dotenv()
+#Get token from .env file
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 intents = discord.Intents.default()
@@ -13,8 +12,9 @@ intents.message_content = True
 client = commands.Bot(command_prefix='&', intents=intents)
 
 @client.command()
-async def test(ctx, author):
-    print(f"passed")
+async def mention(ctx):
+    print(f"{ctx.author.mention}")
+    await ctx.channel.send(f"{ctx.author.mention}")
 
 @client.event
 async def on_ready():
@@ -29,4 +29,6 @@ async def on_message(message):
         await message.channel.send('Hello!')
         
     await client.process_commands(message)
+    
+    
 client.run(TOKEN)
