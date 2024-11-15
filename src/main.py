@@ -13,7 +13,6 @@ cogs = [levelsys]
 async def load():
     for i in range(len(cogs)):
         await cogs[i].setup(client)
-    print("cogs loaded")
 
 #Get token from .env file
 TOKEN = os.getenv("DISCORD_TOKEN")
