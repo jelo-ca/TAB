@@ -1,1 +1,22 @@
-{"396629488009609226": {"lvl": 0, "xp": 10, "instruments": []}}
+{
+    "396629488009609226": {
+        "lvl": 0,
+        "xp": 32,
+        "instruments": [],
+        "favorites": {},
+        "approval": false,
+        "cooldown": "2024-12-06",
+        "streak": 3,
+        "hasPracticed": true
+    },
+    "253696239009398784": {
+        "lvl": 0,
+        "xp": 8,
+        "instruments": [],
+        "favorites": {},
+        "approval": false,
+        "cooldown": "2024-12-06",
+        "hasPracticed": true,
+        "streak": 1
+    }
+}
